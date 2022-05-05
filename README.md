@@ -3,8 +3,6 @@
 # udacity-project-1
 This will hold the files for the Udacity Web Programming Nanodegree Program Course's Project 1
 
-Material público para o ensino básico de HTML5 e CSS3 para alunos iniciantes. Acesse o material em PDF, analise o código disponibilizado para cada exercício e veja-os funcionando em execução direta via repositório GitHub.
-
 * [Figma Wireframe](https://www.figma.com/file/9BXjKJOjfFohFrbnIpPoF5/Blog-Design-Main-Page)
 * [Online test website](http://k.creatiko.com/index.html)
 

@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@import "reboot.css";
+@import "navbar.css";
+@import "components.css";
+@import "tables.css";
+body {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 16px;
+	color: #000000;
+	text-align: left;
+	background-color: white;
+}
+hr {
+	margin: 1rem 0;
+	color: inherit;
+	background-color: currentColor;
+	border: 0;
+	opacity: 0.25;
+}
+header.hero {
+	margin-top: 64px; /* clear the nav bar */
+	position: relative;
+	margin-bottom: 3rem;
+	padding-top: .5;
+	padding-bottom: .5rem;
+	background-color: #6c757d;
+}
+header.hero:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #212529;
+	opacity: 0.5;
+}
+header.hero .hero-title, header.hero .hero-text {
+	color: #fff;
+	text-align: center;
+}
+header.hero .hero-title, header.hero .hero-text {
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 1.1;
+	display: block;
+	margin-top: 0.625rem;
+	font-family: 'Poppins', sans-serif;
+}
+header.hero .hero-title h1 {
+	font-size: 3rem;
+}
+@media (min-width: 992px) {
+	header.hero {
+		margin-top: 79px; /* clear the nav bar */
+	}
+	header.hero .hero-title h1 {
+		font-size: 5rem;
+	}
+	#siteNav.is-fixed {
+		border-bottom: 1px solid gray;
+	}
+}
+.blog-post > a {
+	color: #212529;
+	text-decoration: none;
+}
+.blog-post > a:focus, .blog-post > a:hover {
+	text-decoration: none;
+	color: #0085A1;
+}
+.blog-post > a > .blog-post-title {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+	margin-bottom: 0.625rem;
+}
+.blog-post > a > .blog-post-subtitle {
+	font-weight: 300;
+	margin-bottom: 0.625rem;
+}
+.blog-post > .blog-post-meta {
+	font-size: 1.125rem;
+	font-style: italic;
+	margin-top: 0;
+	color: #6c757d;
+}
+.blog-post > .blog-post-meta > a {
+	text-decoration: none;
+}
+@media (min-width: 992px) {
+	.blog-post > a > .blog-post-title {
+		font-size: 2.25rem;
+	}
+}
+.sg-table > .table {
+	max-width: 100%;
+	margin-bottom: 1.5rem;
+	font-size: .875rem
+}
+@media (max-width: 991.98px) {
+	.sg-table > .table {
+		display: block;
+		overflow-x: auto
+	}
+	.sg-table > .table.table-bordered {
+		border: 0
+	}
+}
+.sg-table > .table th:first-child, .sg-table > .table td:first-child {
+	padding-left: 0
+}
+.sg-table > .table th:not(:last-child), .sg-table > .table td:not(:last-child) {
+	padding-right: 3.5rem
+}
+.sg-table > .table td:first-child > code {
+	white-space: nowrap
+}
+.sg-table > .table td:first-child > code {
+	white-space: nowrap;
+}
+.oleo {
+	font-family: 'Oleo Script Swash Caps', cursive;
+}
+.fw-200 {
+	font-weight: 200;
+}
+.fw-400 {
+	font-weight: 400;
+}
+.fw-500 {
+	font-weight: 500;
+}
+.fw-700 {
+	font-weight: 700;
+}
+.static-box {
+	position: fixed !important;
+}

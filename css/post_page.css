@@ -1,0 +1,203 @@
+@charset "UTF-8";
+@import "reboot.css";
+@import "navbar.css";
+@import "components.css";
+body {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 16px;
+	color: #000000;
+	text-align: left;
+	background-color: white;
+}
+hr {
+	margin: 1rem 0;
+	color: inherit;
+	background-color: currentColor;
+	border: 0;
+	opacity: 0.25;
+}
+header.hero {
+	position: relative;
+	margin-bottom: 3rem;
+	padding-top: calc(7rem + 57px);
+	padding-bottom: 7rem;
+	background: no-repeat center center;
+	background-color: #6c757d;
+	background-image: url('https://source.unsplash.com/600x400/?marriage');
+	background-size: cover;
+	background-attachment: scroll;
+}
+header.hero:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #212529;
+	opacity: 0.5;
+}
+header.hero .hero-title, header.hero .hero-text {
+	color: #fff;
+	text-align: center;
+}
+header.hero .hero-title, header.hero .hero-text {
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 1.1;
+	display: block;
+	margin-top: 0.625rem;
+	font-family: 'Poppins', sans-serif;
+}
+header.hero .hero-title {
+	font-family: 'Oleo Script Swash Caps', cursive;
+}
+header.hero .hero-title h1 {
+	font-size: 3rem;
+}
+@media (min-width: 992px) {
+	header.hero {
+		padding-top: 6.5rem;
+		padding-bottom: 6.5rem;
+	}
+	header.hero .hero-title h1 {
+		font-size: 3rem;
+	}
+}
+header.hero .hero-title .hero-post-meta {
+	font-size: 1.25rem;
+	font-weight: 300;
+	font-style: italic;
+	font-family: 'Poppins', sans-serif;
+}
+header.hero .hero-title .hero-post-meta a {
+	color: white;
+	text-decoration: none;
+}
+header.hero .hero-title .hero-post-meta, header.hero .hero-title .subheading {
+	line-height: 1.1;
+	display: block;
+}
+.blog-post > a {
+	color: #212529;
+	text-decoration: none;
+}
+.blog-post > a:focus, .blog-post > a:hover {
+	text-decoration: none;
+	color: #0085A1;
+}
+.blog-post > a > .card-body > .blog-post-title {
+	font-size: 1.875rem;
+	margin-top: .675rem;
+	margin-bottom: 0.325rem;
+}
+.blog-post > a > .card-body > .blog-post-subtitle {
+	font-size: 1.275rem;
+	font-weight: 300;
+}
+.blog-post > .card-footer > .blog-post-meta {
+	font-size: 1.125rem;
+	font-style: italic;
+	margin-left: 1rem;
+	color: #6c757d;
+	line-height: 1.5rem;
+}
+.blog-post > .card-footer > .user-image {
+	margin-right: 1rem;
+	max-height: 80px;
+}
+.blog-post > .blog-post-meta > a {
+	text-decoration: none;
+}
+.blog-posts-container {
+	width: 98.3%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	gap: 20px;
+}
+@media (min-width: 992px) {
+	.blog-post > a > .blog-post-title {
+		font-size: 2.25rem;
+	}
+	.blog-posts-container {
+		width: 83.3%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		gap: 20px;
+	}
+}
+#author-info p {
+	margin: 0 0 1.5rem 0;
+	line-height: 1.3rem;
+}
+#author-info .author-info-left {
+	grid-area: info;
+}
+#author-info img {
+	grid-area: image;
+}
+.author-bio {
+	grid-area: bio;
+}
+.social-share {
+	grid-area: social;
+}
+.author-name {
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+.author-title {
+	font-style: italic;
+	font-size: 1.05rem;
+	color: #d63384;
+}
+.author-company {
+	font-size: 0.9rem;
+}
+#author-info {
+	width: 100%;
+	margin: 0 auto 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"info info image"
+		"bio bio bio"
+		"social social social";
+	background-color: darkgrey;
+	padding: 0.5rem;
+}
+@media (min-width: 576px) {
+	#author-info {
+		width: 100%;
+		margin: 0 auto 1rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 200px;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"info info image social"
+			"bio bio bio bio";
+		background-color: darkgrey;
+		padding: 0.5rem;
+	}
+}
+@media (min-width: 992px) {
+	#author-info {
+		width: 100%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 100px 100px 50px;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"info info image"
+			"bio bio bio";
+		background-color: white;
+	}
+}

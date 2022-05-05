@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Our Family Blog</title>
+<!-- Google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+<!-- Font Awesome icons (free version)--> 
+<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script> 
+<!-- blog CSS-->
+<link href="css/style_guide.css" rel="stylesheet" />
+</head>
+<body>
+<!-- Bootstrap standard nav bar-->
+<nav class="navbar navbar-expand-lg navbar-light is-fixed is-visible" id="siteNav">
+	<div class="container px-4 px-lg-5"> <a class="navbar-brand" href="index.html">Our Family Blog</a>
+		<button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i> </button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ms-auto py-4 py-lg-0">
+				<li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Post</a></li>
+				<li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="style_guide.html">Style Guide</a></li>
+				<li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="design.html">Design</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- Page Header-->
+<header class="hero" style="background-image: url('images/home-bgd.png')">
+	<div class="container position-relative px-4 px-lg-5">
+		<div class="row justify-content-center">
+			<div class="col-md-10 col-lg-8 col-xl-7 py-3">
+				<div class="hero-title">
+					<h3>Style Guide</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+	<div class="content-grid">
+		<div class="grid-item-left">
+			<div class="static-box hide-on-mobile show-on-large"> <a href="#headings">Headings</a> <a href="#lists">Lists</a> <a href="#typography">Typography</a> <a href="#fonts">Fonts Used</a> </div>
+			<select class="hide-on-large show-on-mobile form-select mb-4" onchange="window.location.href=this.value">
+				<option value="#headings" selected="selected">Headings</option>
+				<option value="#lists">Lists</option>
+				<option value="#typography">Typography</option>
+				<option value="#fonts">Fonts Used</option>
+			</select>
+		</div>
+		<div class="grid-item-right sg-table"> <a name="headings"></a>
+			<h3>Headings</h3>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Tag</th>
+						<th>Example</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><code>&lt;h1&gt;&lt;/h1&gt;</code></td>
+						<td><span class="h1">h1. heading</span></td>
+					</tr>
+					<tr>
+						<td><code>&lt;h2&gt;&lt;/h2&gt;</code></td>
+						<td><span class="h2">h2. heading</span></td>
+					</tr>
+					<tr>
+						<td><code>&lt;h3&gt;&lt;/h3&gt;</code></td>
+						<td><span class="h3">h3. heading</span></td>
+					</tr>
+					<tr>
+						<td><code>&lt;h4&gt;&lt;/h4&gt;</code></td>
+						<td><span class="h4">h4. heading</span></td>
+					</tr>
+					<tr>
+						<td><code>&lt;h5&gt;&lt;/h5&gt;</code></td>
+						<td><span class="h5">h5. heading</span></td>
+					</tr>
+					<tr>
+						<td><code>&lt;h6&gt;&lt;/h6&gt;</code></td>
+						<td><span class="h6">h6. heading</span></td>
+					</tr>
+				</tbody>
+			</table>
+			<a name="lists"></a>
+			<h3>Lists</h3>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Tag</th>
+						<th>Example</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><code>&lt;ul&gt;&lt;/ul&gt;</code></td>
+						<td><ul>
+								<li>List item 1.</li>
+								<li>List item 2.</li>
+								<li>Nested lists:
+									<ul>
+										<li>Nested list line 1.</li>
+										<li>Nested list line 2.</li>
+									</ul>
+								</li>
+								<li>List item after nested list.</li>
+							</ul></td>
+					</tr>
+					<tr>
+						<td><code>&lt;ol&gt;&lt;/ol&gt;</code></td>
+						<td><ol>
+								<li>List item 1.</li>
+								<li>List item 2.</li>
+								<li>Nested lists:
+									<ol>
+										<li>Nested list line 1.</li>
+										<li>Nested list line 2.</li>
+									</ol>
+								</li>
+								<li>List item after nested list.</li>
+							</ol></td>
+					</tr>
+				</tbody>
+			</table>
+			<a name="typography"></a>
+			<h3>Typography</h3>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Tag</th>
+						<th>Example</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><code>&lt;p&gt;&lt;/p&gt;</code></td>
+						<td><p>This is a paragraph</p></td>
+					</tr>
+					<tr>
+						<td><code>&lt;a&gt;&lt;/a&gt;</code></td>
+						<td><a href=#!>This is an anchor link</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<a name="fonts"></a>
+			<table class="table">
+				<thead>
+					<tr>
+						<th colspan="2"><h3>Fonts Used</h3></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><code>Font-Family</code></td>
+						<td><span>'Poppins'</span></td>
+					</tr>
+					<tr>
+						<td><code>Font-Weight</code></td>
+						<td><span class="fw-200">'Poppins light'</span></td>
+					</tr>
+					<tr>
+						<td><code>Font-Weight</code></td>
+						<td><span class="fw-400">'Poppins regular'</span></td>
+					</tr>
+					<tr>
+						<td><code>Font-Weight</code></td>
+						<td><span class="fw-500">'Poppins bold'</span></td>
+					</tr>
+					<tr>
+						<td><code>Font-Weight</code></td>
+						<td><span class="fw-700">'Poppins black'</span></td>
+					</tr>
+					<tr>
+						<td><code>Font-Family</code></td>
+						<td><span class="oleo">'Oleo Script Swash Caps'</span></td>
+					</tr>
+					<tr>
+						<td><code>Font-Weight</code></td>
+						<td><span class="oleo fw-400">'Oleo Script Swash Caps regular'</span></td>
+					</tr>
+					<tr>
+						<td><code>Font-Weight</code></td>
+						<td><span class="oleo fw-700">'Oleo Script Swash Caps bold'</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<!-- Footer-->
+<footer class="border-top">
+	<div class="container px-4 px-lg-5">
+		<div class="row gx-4 gx-lg-5 justify-content-center">
+			<div class="col-md-10 col-lg-8 col-xl-7">
+				<ul class="list-inline text-center">
+					<li class="list-inline-item"> <a href="#!"> <span class="fa-stack fa-lg"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-twitter fa-stack-1x fa-inverse"></i> </span> </a> </li>
+					<li class="list-inline-item"> <a href="#!"> <span class="fa-stack fa-lg"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i> </span> </a> </li>
+					<li class="list-inline-item"> <a href="#!"> <span class="fa-stack fa-lg"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-github fa-stack-1x fa-inverse"></i> </span> </a> </li>
+				</ul>
+				<div class="small text-center text-muted fst-italic">Copyright &copy; Our Family Blog 2022</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Core theme JS--> 
+<script src="js/scripts.js"></script>
+</body>
+</html>

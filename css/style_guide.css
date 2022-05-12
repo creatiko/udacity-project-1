@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import "reboot.css";
 @import "navbar.css";
 @import "components.css";
 @import "tables.css";
@@ -28,16 +27,6 @@ header.hero {
 	padding-bottom: .5rem;
 	background-color: #6c757d;
 }
-header.hero:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #212529;
-	opacity: 0.5;
-}
 header.hero .hero-title, header.hero .hero-text {
 	color: #fff;
 	text-align: center;
@@ -55,7 +44,7 @@ header.hero .hero-title h1 {
 }
 @media (min-width: 992px) {
 	header.hero {
-		margin-top: 79px; /* clear the nav bar */
+		margin-top: 105px; /* clear the nav bar */
 	}
 	header.hero .hero-title h1 {
 		font-size: 5rem;
